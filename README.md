@@ -6,9 +6,10 @@
 
 
     NSArray* activityItems = [NSArray arrayWithObjects:
-                              self.post.title,
-                              self.post.url,
-                              nil];
+                                [NSString stringWithFormat:@"Google"],
+                                [NSURL URLWithString:@"http://google.com"],
+                                nil
+                              ];
 
     SleipnirActivity* sleipnirActivity             = [[SleipnirActivity alloc] init];
 
